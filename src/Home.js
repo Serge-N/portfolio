@@ -3,8 +3,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Button } from '@material-ui/core';
 import Profile from './Profile';
+import Title from './Title';
+import Experience from './Experience';
+import Location from './Location';
+import Intro from './Intro';
+import {Alert} from '@material-ui/lab'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     root: {
         flexGrow: 1,
     }
@@ -20,16 +25,16 @@ export default function Home() {
                     <Profile />
                 </Grid>
                 <Grid item xs={12}>
-                   <h1>FullStack developer</h1> 
+                    <Title />
                 </Grid>
                 <Grid item xs={12}>
-                   <h3>Professional Experience : 1 Year</h3> 
+                    <Experience />
                 </Grid>
                 <Grid item xs={12}>
-                   <h5>Lusaka, Zambia.</h5> 
+                    <Location />
                 </Grid>
                 <Grid item xs={12}>
-                   <div>Focused on Design Patterns, Beautiful minimalist UI, and Data Structures and Algorithms.</div> 
+                    <Intro />
                 </Grid>
                 <Grid item xs={6}>
                     <Button variant="outlined" color="primary">
@@ -38,8 +43,11 @@ export default function Home() {
                 </Grid>
                 <Grid item xs={6}>
                     <Button variant="outlined" >
-                       EDUCATION
+                        EDUCATION
                     </Button>
+                </Grid>
+                <Grid item xs={12}>
+                    <Alert severity="error">This website is still under development!</Alert>
                 </Grid>
             </Grid>
         </div>

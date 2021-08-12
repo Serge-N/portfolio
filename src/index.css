@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(30deg,#2193b0 40%, #6dd5ed);
+  background: linear-gradient(30deg,#2193b0, #6dd5ed);
 }
 
 code {
@@ -23,4 +23,10 @@ code {
 
 .App{
   height: 100vh;
+}
+
+.city{
+  font-size: 25px;
+  margin-left: 10px;
+  line-height: 20px;
 }
