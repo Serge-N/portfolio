@@ -3,7 +3,7 @@ import React from 'react';
 export default function Profile ()
 {
   return  (
-        <img src="/Happy.jpg"
+        <img src="/Bolokwa.png"
           className="avator"
           alt="avatar" />
       );
