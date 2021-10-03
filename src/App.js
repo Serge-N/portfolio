@@ -1,9 +1,8 @@
 import React from 'react';
 import "./index.css"
-import Home from './Home';
+import Home from './pages/Home';
 import { Container }from '@material-ui/core';
 
-//const Name = () => <span>Serge Nalishiwa</span>
 
 function App() {
   return (
